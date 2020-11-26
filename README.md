@@ -1,1 +1,1 @@
-# create-github-pages
+https://github.com/AndreiPavlov135/rsschool-cv
