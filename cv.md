@@ -13,4 +13,4 @@ const func = (num) => {
 };  
 ```
 8. Higher education (BSUPC)
-9. My English level is A2, but I always try to improve it.
+9. My English level is A2, but I always try to improve it every day.
