@@ -12,13 +12,14 @@ h1 {
 main {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.8;
-    width: 900px;
+    width: 75%; 
     margin: 0 auto;
     background: #e4f9f6;
 }
 
 section {
     display: flex;
+    width: 100%;
 }
 
 p {
@@ -27,12 +28,20 @@ p {
     margin: 20px 0 0 0;
 }
 
-pre {
+.codexample {
+    background: #0000FF; 
+}
+
+.codexampl {
     font-size: 130%;
-    font-family: monospace;
-    background: #0000FF;
     color: #fff;
-    margin: 0px;
+    white-space: pre-wrap; 
+    display: flex;
+    flex-direction: column; 
+}
+
+code {
+    justify-content: space-between;
 }
 
 ul {
@@ -66,4 +75,48 @@ li:nth-child(2), li:nth-child(3), li:nth-child(4) {
 
 figure img {
     width: 250px;
+}
+
+@media screen and (max-width: 1010px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+    li:nth-child(1) {
+        font-size: medium;
+    }
+    ul {
+        width: 45%;
+    }
+    figure {
+        width: 45%;
+    }
+    pre {
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    section{
+        flex-direction: column-reverse;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+    li:nth-child(1) {
+        font-size: medium;
+    }
+    ul, figure {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
